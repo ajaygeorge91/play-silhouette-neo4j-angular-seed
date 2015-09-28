@@ -5,24 +5,15 @@ The Play Silhouette Angular Seed project shows how [Silhouette](https://github.c
 to create a SPA with [AngularJS](https://angularjs.org/)/[Satellizer](https://github.com/sahat/satellizer) and Play
 scaffolded by [yeoman](https://github.com/tuplejump/play-yeoman). It's a starting point which can be extended to fit
 your needs.
-
-## Example
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-(The "Build App" phase will take a few minutes)
-
-Or you can find a running example of this template under the following URL: https://play-silhouette-angular-seed.herokuapp.com/
-
+ 
 ## Features
 
 * Sign Up
 * Sign In (Credentials)
 * JWT authentication
-* Social Auth (Facebook, Google+, VK, Twitter, Xing)
+* Social Auth (Facebook, Google+ )
 * Dependency Injection with Guice
-* Publishing Events
-* Avatar service
+* Publishing Events 
 * Remember me functionality
 * [Security headers](https://www.playframework.com/documentation/2.4.x/SecurityHeaders)
 * [CSRF Protection](https://www.playframework.com/documentation/2.4.x/ScalaCsrf)
@@ -68,22 +59,7 @@ Consulate the [Silhouette documentation](http://silhouette.mohiva.com/docs) for 
     ...
   });
   ...
-  ```
-  If you are using Heroku Update the "~\app.json" file with your client secret and client ID.
-  ```
-  "env": {
-    "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-multi",
-    "NPM_CONFIG_PRODUCTION": "false",
-    "PLAY_CONF_FILE": "application.conf",
-    "PLAY_APP_SECRET": "changeme",
-    "FACEBOOK_CLIENT_ID": "",
-    "FACEBOOK_CLIENT_SECRET": "",
-    "GOOGLE_CLIENT_ID": "",
-    "GOOGLE_CLIENT_SECRET": "",
-    "TWITTER_CONSUMER_KEY": "",
-    "TWITTER_CONSUMER_SECRET": ""
-  }
-  ```
+  ``` 
   
   To test social providers on localhost, you can either set your system environment variables as defined in the app.json "env" section or manually update the "~\conf\silhouette.conf" file directly with your client ID and client secret.
   ```
