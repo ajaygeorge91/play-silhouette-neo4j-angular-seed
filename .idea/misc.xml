@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" />
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="CopyrightManager" default="" />
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../../Projects_/final/oidc/LollipopShowcase" value="4281653231627" />
+        <entry key="$PROJECT_DIR$/../../Teehalf/erx-enterprise" value="10043221971330" />
+        <entry key="$PROJECT_DIR$/../../Teehalf/erx/client/temp/Erx/enterprise/vendors/aFileChooser" value="1434445456188" />
+        <entry key="$PROJECT_DIR$/../../Teehalf/erx/client/temp/Erx/enterprise/vendors/cardview" value="1434445923855" />
+        <entry key="$PROJECT_DIR$/../../Teehalf/temp/Erx" value="8606704856411" />
+        <entry key="$PROJECT_DIR$/../../Teehalf/temp/Erx/enterprise/vendors/aFileChooser" value="1434445456188" />
+        <entry key="$PROJECT_DIR$/../../Teehalf/temp/Erx/enterprise/vendors/betterpickers" value="1434442067000" />
+        <entry key="$PROJECT_DIR$/../../Teehalf/temp/Erx/enterprise/vendors/cardview" value="2868901638926" />
+        <entry key="$PROJECT_DIR$/../../Teehalf/temp/Erx/erx-enterprise" value="10041234862075" />
+        <entry key="$PROJECT_DIR$/../../buymetal" value="4288965618000" />
+        <entry key="$PROJECT_DIR$/../../final/android-openid-connect" value="4285684736239" />
+        <entry key="$PROJECT_DIR$/../../final/android/newsKerala" value="4283038428000" />
+      </map>
+    </option>
+  </component>
+  <component name="IdProvider" IDEtalkID="3CF92B45C0CA9A4833CF998C4045D6B4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Projects_/final" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.scala.compiler.ScalaCompileServerForm" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../../CODES/eventual" value="1430465037495" />
+        <entry key="$PROJECT_DIR$/../../Teehalf/erx backup may 26/server" value="1432215807472" />
+        <entry key="$PROJECT_DIR$/../../Teehalf/erx/server" value="1432280566000" />
+        <entry key="$PROJECT_DIR$/../../final/hfk_ref/hifikerala" value="1434868684389" />
+        <entry key="$PROJECT_DIR$/../../final/hfk_ref/play-oauth2-server" value="1433567144534" />
+        <entry key="$PROJECT_DIR$/../../final/hfk_ref/scala-oauth2-provider-slick" value="1433566866787" />
+        <entry key="$PROJECT_DIR$/../../final/hfk_scala/1" value="1430909965479" />
+        <entry key="$PROJECT_DIR$/../../final/play-oauth2-server" value="1430984274841" />
+        <entry key="$PROJECT_DIR$/../../final/play_oidc/scala-oauth2-provider" value="1430978849737" />
+        <entry key="$PROJECT_DIR$/../../final/scala-oauth2-provider-example" value="1430131109164" />
+        <entry key="$PROJECT_DIR$/../../final/scala-oauth2-provider-slick" value="1430983613001" />
+        <entry key="$PROJECT_DIR$/../2/play-silhouette-angular-seed" value="1437131844052" />
+        <entry key="$PROJECT_DIR$/../Play-With-Titan" value="1436011256905" />
+        <entry key="$PROJECT_DIR$/../hfk_server" value="1434951960464" />
+        <entry key="$PROJECT_DIR$" value="1439874038349" />
+        <entry key="$PROJECT_DIR$/../play-silhouette-postgres-async-seed" value="1437122286573" />
+        <entry key="$PROJECT_DIR$/../play-silhouette-seed" value="1436967146901" />
+        <entry key="$PROJECT_DIR$/../play-silhouette-slick-seed" value="1435998139672" />
+        <entry key="$PROJECT_DIR$/../scala-oauth2-provider-slick" value="1435819745294" />
+        <entry key="$PROJECT_DIR$/../server" value="1436872932164" />
+        <entry key="$PROJECT_DIR$/../silhouette-cake-seed" value="1435986879345" />
+        <entry key="$PROJECT_DIR$/../silhouette-rest-seed" value="1436961334363" />
+      </map>
+    </option>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

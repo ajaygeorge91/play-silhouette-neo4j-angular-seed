@@ -1,0 +1,7 @@
+[debug] Copy resource mappings: 
+[debug] 	(/media/ajay/D/my_projects/play-silhouette-angular-seed-2/conf/application.conf,/media/ajay/D/my_projects/play-silhouette-angular-seed-2/target/scala-2.11/classes/application.conf)
+[debug] 	(/media/ajay/D/my_projects/play-silhouette-angular-seed-2/conf/application.prod.conf,/media/ajay/D/my_projects/play-silhouette-angular-seed-2/target/scala-2.11/classes/application.prod.conf)
+[debug] 	(/media/ajay/D/my_projects/play-silhouette-angular-seed-2/conf/logback.xml,/media/ajay/D/my_projects/play-silhouette-angular-seed-2/target/scala-2.11/classes/logback.xml)
+[debug] 	(/media/ajay/D/my_projects/play-silhouette-angular-seed-2/conf/messages,/media/ajay/D/my_projects/play-silhouette-angular-seed-2/target/scala-2.11/classes/messages)
+[debug] 	(/media/ajay/D/my_projects/play-silhouette-angular-seed-2/conf/routes,/media/ajay/D/my_projects/play-silhouette-angular-seed-2/target/scala-2.11/classes/routes)
+[debug] 	(/media/ajay/D/my_projects/play-silhouette-angular-seed-2/conf/silhouette.conf,/media/ajay/D/my_projects/play-silhouette-angular-seed-2/target/scala-2.11/classes/silhouette.conf)

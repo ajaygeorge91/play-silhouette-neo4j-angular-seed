@@ -1,0 +1,9 @@
+syntax: glob
+.idea
+Gemfile.lock
+logs
+ui/node_modules
+ui/app/bower_components
+ui/.sass-cache
+node_modules
+target

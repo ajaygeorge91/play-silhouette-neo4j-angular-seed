@@ -1,0 +1,250 @@
+2015-09-02 15:33:11,798 [INFO] from play.api.libs.concurrent.ActorSystemProvider in pool-4-thread-6 - Starting application default Akka system: application
+2015-09-02 15:33:12,111 [INFO] from play.core.server.NettyServer in pool-4-thread-6 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2015-09-02 15:36:20,217 [INFO] from play.api.libs.concurrent.ActorSystemProvider in ForkJoinPool-1-worker-1 - Starting application default Akka system: application
+2015-09-02 15:36:20,530 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2015-09-02 15:37:12,091 [ERROR] from controllers.SocialAuthController in application-akka.actor.default-dispatcher-4 - AnyContentAsJson({"clientId":"178876398854379","redirectUri":"http://localhost:9000/"})
+2015-09-02 15:37:12,092 [ERROR] from controllers.SocialAuthController in application-akka.actor.default-dispatcher-4 - facebook
+2015-09-02 15:37:12,152 [ERROR] from play.core.server.netty.PlayDefaultUpstreamHandler in application-akka.actor.default-dispatcher-12 - Cannot invoke the action
+com.mohiva.play.silhouette.api.exceptions.ConfigurationException: [Silhouette][facebook] Authorization URL is undefined
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2$$anonfun$5.apply(OAuth2Provider.scala:127) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2$$anonfun$5.apply(OAuth2Provider.scala:127) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:na]
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2.apply(OAuth2Provider.scala:126) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2.apply(OAuth2Provider.scala:116) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at scala.util.Success$$anonfun$map$1.apply(Try.scala:237) ~[scala-library-2.11.7.jar:na]
+	at scala.util.Try$.apply(Try.scala:192) ~[scala-library-2.11.7.jar:na]
+	at scala.util.Success.map(Try.scala:237) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.7.jar:na]
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72) [scala-library-2.11.7.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-09-02 15:37:12,175 [ERROR] from application in application-akka.actor.default-dispatcher-12 - 
+
+! @6nb82l4ea - Internal server error, for (POST) [/authenticate/facebook] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[ConfigurationException: [Silhouette][facebook] Authorization URL is undefined]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:265) ~[play_2.11-2.4.2.jar:2.4.2]
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:191) ~[play_2.11-2.4.2.jar:2.4.2]
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:179) [play_2.11-2.4.2.jar:2.4.2]
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:212) [play_2.11-2.4.2.jar:2.4.2]
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:94) [play_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:273) [play-netty-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:269) [play-netty-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.7.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.executeScheduled(Execution.scala:109) [play-iteratees_2.11-2.4.2.jar:2.4.2]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:71) [play-iteratees_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$recover$1.apply(Future.scala:324) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$recover$1.apply(Future.scala:324) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.7.jar:na]
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72) [scala-library-2.11.7.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+Caused by: com.mohiva.play.silhouette.api.exceptions.ConfigurationException: [Silhouette][facebook] Authorization URL is undefined
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2$$anonfun$5.apply(OAuth2Provider.scala:127) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2$$anonfun$5.apply(OAuth2Provider.scala:127) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:na]
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2.apply(OAuth2Provider.scala:126) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2.apply(OAuth2Provider.scala:116) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at scala.util.Success$$anonfun$map$1.apply(Try.scala:237) ~[scala-library-2.11.7.jar:na]
+	at scala.util.Try$.apply(Try.scala:192) ~[scala-library-2.11.7.jar:na]
+	at scala.util.Success.map(Try.scala:237) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) ~[scala-library-2.11.7.jar:na]
+	... 13 common frames omitted
+2015-09-02 15:37:14,572 [ERROR] from controllers.SocialAuthController in application-akka.actor.default-dispatcher-12 - AnyContentAsJson({"code":"4/tiXbwXxNVy8w21CoFHROkG4Rs2YA2pfSH5H-BgIl_Tk","clientId":"886287083873-d9lili371tg1a0h9ik3309r78qqvbvv9.apps.googleusercontent.com","redirectUri":"http://localhost:9000"})
+2015-09-02 15:37:14,572 [ERROR] from controllers.SocialAuthController in application-akka.actor.default-dispatcher-12 - google
+2015-09-02 15:37:15,801 [ERROR] from play.core.server.netty.PlayDefaultUpstreamHandler in application-akka.actor.default-dispatcher-13 - Cannot invoke the action
+java.net.ConnectException: Connection refused: localhost/127.0.0.1:7474
+	at com.ning.http.client.providers.netty.request.NettyConnectListener.onFutureFailure(NettyConnectListener.java:128) ~[async-http-client.jar:na]
+	at com.ning.http.client.providers.netty.request.NettyConnectListener.operationComplete(NettyConnectListener.java:140) ~[async-http-client.jar:na]
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:409) ~[netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:400) ~[netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:362) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:109) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42) ~[netty.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[netty.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) ~[netty.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_45]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_45]
+Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:7474
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_45]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_45]
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105) ~[netty.jar:na]
+	... 8 common frames omitted
+2015-09-02 15:37:15,803 [ERROR] from application in application-akka.actor.default-dispatcher-13 - 
+
+! @6nb82l9np - Internal server error, for (POST) [/authenticate/google] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[ConnectException: Connection refused: localhost/127.0.0.1:7474]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:265) ~[play_2.11-2.4.2.jar:2.4.2]
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:191) ~[play_2.11-2.4.2.jar:2.4.2]
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:179) [play_2.11-2.4.2.jar:2.4.2]
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:212) [play_2.11-2.4.2.jar:2.4.2]
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:94) [play_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:273) [play-netty-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:269) [play-netty-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.7.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.executeScheduled(Execution.scala:109) [play-iteratees_2.11-2.4.2.jar:2.4.2]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:71) [play-iteratees_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$recover$1.apply(Future.scala:324) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$recover$1.apply(Future.scala:324) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.7.jar:na]
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72) [scala-library-2.11.7.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:7474
+	at com.ning.http.client.providers.netty.request.NettyConnectListener.onFutureFailure(NettyConnectListener.java:128) ~[async-http-client.jar:na]
+	at com.ning.http.client.providers.netty.request.NettyConnectListener.operationComplete(NettyConnectListener.java:140) ~[async-http-client.jar:na]
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:409) ~[netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:400) ~[netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:362) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:109) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42) ~[netty.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) ~[netty.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) ~[netty.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_45]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_45]
+Caused by: java.net.ConnectException: Connection refused: localhost/127.0.0.1:7474
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_45]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_45]
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152) ~[netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105) ~[netty.jar:na]
+	... 8 common frames omitted
+2015-09-02 15:37:56,942 [ERROR] from controllers.SocialAuthController in application-akka.actor.default-dispatcher-11 - AnyContentAsJson({"clientId":"178876398854379","redirectUri":"http://localhost:9000/"})
+2015-09-02 15:37:56,942 [ERROR] from controllers.SocialAuthController in application-akka.actor.default-dispatcher-11 - facebook
+2015-09-02 15:37:56,943 [ERROR] from play.core.server.netty.PlayDefaultUpstreamHandler in application-akka.actor.default-dispatcher-2 - Cannot invoke the action
+com.mohiva.play.silhouette.api.exceptions.ConfigurationException: [Silhouette][facebook] Authorization URL is undefined
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2$$anonfun$5.apply(OAuth2Provider.scala:127) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2$$anonfun$5.apply(OAuth2Provider.scala:127) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:na]
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2.apply(OAuth2Provider.scala:126) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2.apply(OAuth2Provider.scala:116) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at scala.util.Success$$anonfun$map$1.apply(Try.scala:237) ~[scala-library-2.11.7.jar:na]
+	at scala.util.Try$.apply(Try.scala:192) ~[scala-library-2.11.7.jar:na]
+	at scala.util.Success.map(Try.scala:237) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.7.jar:na]
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72) [scala-library-2.11.7.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+2015-09-02 15:37:56,945 [ERROR] from application in application-akka.actor.default-dispatcher-2 - 
+
+! @6nb82nik9 - Internal server error, for (POST) [/authenticate/facebook] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[ConfigurationException: [Silhouette][facebook] Authorization URL is undefined]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:265) ~[play_2.11-2.4.2.jar:2.4.2]
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:191) ~[play_2.11-2.4.2.jar:2.4.2]
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:179) [play_2.11-2.4.2.jar:2.4.2]
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:212) [play_2.11-2.4.2.jar:2.4.2]
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:94) [play_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:273) [play-netty-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:269) [play-netty-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.7.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.executeScheduled(Execution.scala:109) [play-iteratees_2.11-2.4.2.jar:2.4.2]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:71) [play-iteratees_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$recover$1.apply(Future.scala:324) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$recover$1.apply(Future.scala:324) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.7.jar:na]
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91) [akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72) [scala-library-2.11.7.jar:na]
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) [akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) [akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.7.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.7.jar:na]
+Caused by: com.mohiva.play.silhouette.api.exceptions.ConfigurationException: [Silhouette][facebook] Authorization URL is undefined
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2$$anonfun$5.apply(OAuth2Provider.scala:127) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2$$anonfun$5.apply(OAuth2Provider.scala:127) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at scala.Option.getOrElse(Option.scala:121) ~[scala-library-2.11.7.jar:na]
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2.apply(OAuth2Provider.scala:126) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider$$anonfun$authenticate$2.apply(OAuth2Provider.scala:116) ~[play-silhouette_2.11-3.0.0.jar:3.0.0]
+	at scala.util.Success$$anonfun$map$1.apply(Try.scala:237) ~[scala-library-2.11.7.jar:na]
+	at scala.util.Try$.apply(Try.scala:192) ~[scala-library-2.11.7.jar:na]
+	at scala.util.Success.map(Try.scala:237) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) ~[scala-library-2.11.7.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) ~[scala-library-2.11.7.jar:na]
+	... 13 common frames omitted
+2015-09-02 15:38:00,192 [ERROR] from controllers.SocialAuthController in application-akka.actor.default-dispatcher-2 - AnyContentAsJson({"code":"4/UdDaUFfs5ONXtR1jkodXBqhCPyEE9kGLif1OFkpiHAQ","clientId":"886287083873-d9lili371tg1a0h9ik3309r78qqvbvv9.apps.googleusercontent.com","redirectUri":"http://localhost:9000"})
+2015-09-02 15:38:00,192 [ERROR] from controllers.SocialAuthController in application-akka.actor.default-dispatcher-2 - google
+2015-09-02 17:10:42,558 [ERROR] from controllers.SocialAuthController in application-akka.actor.default-dispatcher-24 - AnyContentAsJson({"code":"AQCDt2jE6niqz07nWa1N8e5rLHHqMt58yWNDtRINFGmVTLcDUiJ7Egc-FCDsVmTOwTxPjYt1lILTvEmByUBuMUeHReqjrCq3DL2Cy_cDlyhVSXdLi_FwDw6kCKnhMDWMrKgVU6wGUl2KJ9r6eySpM-LA69TtgSqd8I01waUCC_3-DUF_p7kwqa05rVlseh_07IL_6xvxkHJRswQUOlsAKTkx8P3Q2DRmu61Rkpew8chgiqan-lIvNifRYbjn9zSBLE9vrhxAUT2krpLvMk7EgGBLkzvHZtbSYrfpCc7qIJTrFBAk63czfaTdpqQR65FF7PY","clientId":"178876398854379","redirectUri":"http://localhost:9000/"})
+2015-09-02 17:10:42,594 [ERROR] from controllers.SocialAuthController in application-akka.actor.default-dispatcher-24 - facebook
+2015-09-02 19:42:10,884 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-50 - Shutdown application default Akka system: application
+2015-09-02 19:42:13,279 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-50 - Starting application default Akka system: application
+2015-09-02 19:42:13,681 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-50 - Application started (Dev)
+2015-09-02 19:50:11,668 [ERROR] from controllers.SocialAuthController in application-akka.actor.default-dispatcher-42 - AnyContentAsJson({"code":"4/WjmxPbwgV6s39we1S6_qmUSvWdrHVFGlnGGdLS5P-YY","clientId":"886287083873-d9lili371tg1a0h9ik3309r78qqvbvv9.apps.googleusercontent.com","redirectUri":"http://localhost:9000"})
+2015-09-02 19:50:11,681 [ERROR] from controllers.SocialAuthController in application-akka.actor.default-dispatcher-42 - google
+2015-09-02 20:04:57,342 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-56 - Shutdown application default Akka system: application
+2015-09-02 20:04:57,747 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-56 - Starting application default Akka system: application
+2015-09-02 20:04:57,903 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-56 - Application started (Dev)
+2015-09-02 20:06:13,302 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-3 - Shutdown application default Akka system: application
+2015-09-02 20:06:13,615 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-3 - Starting application default Akka system: application
+2015-09-02 20:06:13,714 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
